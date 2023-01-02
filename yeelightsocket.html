@@ -1,7 +1,7 @@
 <script type="text/javascript">
-    RED.nodes.registerType('denonsock',{
+    RED.nodes.registerType('yeelightsock',{
         category: 'network',
-        color: "rgb(215, 160, 160)",
+        color: "rgb(215, 200, 160)",
         defaults: {
             name: {value:""}
         },
@@ -9,18 +9,17 @@
         outputs:1,
         icon: "white-globe.svg",
         label: function() {
-            return this.name||"denonsock";
+            return this.name||"yeelightsock";
         }
     });
 </script>
-
-<script type="text/html" data-template-name="denonsock">
+<script type="text/html" data-template-name="yeelightsock">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
-<script type="text/html" data-help-name="denonsock">
-    <p>A basic implementation of a websocket listener that is controlled by input message payloads eg. msg.payload.command = "connect|disconnect"  msg.payload.url = "ws://xxxxx"</p>
+<script type="text/html" data-help-name="yeelightsock">
+    <p>A basic implementation of  yeelight  connections that is controlled by input message payloads eg. msg.payload.command = "connect|disconnect"  msg.payload.url = "ws://xxxxx"</p>
 </script>
