@@ -1,7 +1,6 @@
 const url          = require('url');
 const tcp          = require('net');
 const util         = require('util');
-const ssdp         = require('ssdp2');
 const EventEmitter = require('events');
 
 /**
